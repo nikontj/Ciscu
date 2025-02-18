@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog do Ciscu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@700&display=swap');
+
+    body {
+      background: linear-gradient(45deg, #ffffff, #808080, #000000); /* Degradê branco, cinza e preto */
+      font-family: Arial, sans-serif;
+      color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      gap: 20px;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #000000;
+      text-shadow: 2px 2px #333;
+      font-family: 'Georgia', serif; /* Alternativa para Cheltenham */
+      animation: rgbPiscar 1.5s infinite; /* Animação de piscar RGB */
+    }
+
+    @keyframes rgbPiscar {
+      0% { color: #ff0000; } /* Vermelho */
+      33% { color: #00ff00; } /* Verde */
+      66% { color: #0000ff; } /* Azul */
+      100% { color: #ff0000; } /* Retorna ao vermelho */
+    }
+
+    .imagem, .imagens {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      max-height: 300px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .imagem:hover, .imagens:hover {
+      transform: scale(1.05);
+    }
+
+    .botao {
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #f2f2f2;
+      background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px #000;
+      animation: botaoPiscar 2s infinite; /* Animação de piscar para o botão */
+    }
+
+    .botao:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes botaoPiscar {
+      0% { background-color: #ff006e; }
+      33% { background-color: #8338ec; }
+      66% { background-color: #3a86ff; }
+      100% { background-color: #ff006e; }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="titulo">Ciscu</h2>
+  <img src="/IMG-20240927-WA0016.jpg" alt="1/IMG-20240927-WA0016.jpg" class="imagem">
+
+  <h2 class="titulo">Jairo e Gustavo</h2>
+  <img src="/IMG-20240925-WA0006.jpg" alt="/IMG-20240925-WA0006.jpg" class="imagens">
+  
+  <div class="container">
+    <a href="https://www.instagram.com/ciscu_picture/profilecard/?igsh=MXhwdTYwb2g4dmZkeg==" target="_blank">
+      <button class="botao">Clique aqui para ver CP!!</button>
+    </a>
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=ukK-4I4N_yq_QN4K" target="_blank">
+      <button class="botao">MULHERES VIÚVAS A 1KM</button>
+    </a>
+    <a href="https://youtu.be/Y7S96nA7NE4?si=i9Sap6g2jA6hTxTw" target="_blank">
+      <button class="botao">MÃES SOLTEIRAS SOLITÁRIAS A 2Km</button>
+    </a>
+    <a href="index1.html" target="_blank">
+     <button class="botao">NÃO CLIQUE
+     </button>
+    </a>
+    <iframe width="110" height="200" src="https://www.myinstants.com/instant/corinthians-rojao-15182/embed/" frameborder="0" scrolling="no"></iframe>
+    
+  
+      
+  </div>
+
+</body>
+</html>
